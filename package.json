@@ -1,0 +1,27 @@
+{
+  "name": "hungry-hub",
+  "version": "1.0.0",
+  "description": "A food restaurant app built using react.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanmudliar/hungry-hub.git"
+  },
+  "author": "Rohan Mudliar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohanmudliar/hungry-hub/issues"
+  },
+  "homepage": "https://github.com/rohanmudliar/hungry-hub#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
