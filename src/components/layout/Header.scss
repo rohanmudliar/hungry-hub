@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 9;
+
+  .logo-container {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+      height: 100%;
+    }
+
+    p {
+      @media screen and (max-width: 639px) {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          transition: all 0.1s ease-in-out;
+        }
+
+        &.cart {
+          gap: 4px;
+          position: relative;
+
+          span {
+            position: absolute;
+            background: #fe6508;
+            width: 20px;
+            height: 20px;
+            top: -11px;
+            font-size: 10px;
+            left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+
+          svg {
+            width: 30px;
+            height: 30px;
+            stroke: rgb(104, 107, 120);
+          }
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 18px;
+        }
+
+        &:hover {
+          color: #fe6508;
+
+          svg {
+            fill: #fe6508;
+            stroke: #fe6508;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
