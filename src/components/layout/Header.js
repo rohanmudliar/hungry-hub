@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Wrapper from "../common/Wrapper";
 import Logo from "../../assets/images/logo.png";
@@ -10,12 +10,11 @@ import "./Header.scss";
 
 const Header = () => {
   const [showLogo, setShowLogo] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
-    if (window.location.pathname === "/") {
-      setShowLogo(false);
-    }
-  }, []);
+    setShowLogo(location.pathname !== "/");
+  }, [location.pathname]);
 
   return (
     <Wrapper>
