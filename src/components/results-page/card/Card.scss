@@ -1,0 +1,77 @@
+.card-container {
+  width: 15.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: all 0.1s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover,
+  &:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+
+  .image-container {
+    height: 182px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .title,
+  .ratings,
+  .cuisines,
+  .areaName,
+  .deliveryTime {
+    padding: 0 8px;
+
+    p {
+      margin: 4px 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .ratings {
+    display: flex;
+    gap: 6px;
+    span {
+      display: flex;
+      align-items: center;
+      svg {
+        stroke: green;
+      }
+    }
+  }
+  .cuisines,
+  .areaName,
+  .deliveryTime {
+    font-size: 14px;
+    color: rgb(199, 199, 199);
+  }
+
+  .deliveryTime {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

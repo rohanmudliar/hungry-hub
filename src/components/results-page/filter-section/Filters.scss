@@ -1,0 +1,47 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      list-style: none;
+      border-radius: 18px;
+      background-color: rgb(235, 235, 235);
+      border: 1px solid rgb(226, 226, 231);
+      padding: 9px 12px;
+      display: inline-grid;
+      width: max-content;
+      grid-auto-flow: column;
+      gap: 8px;
+      box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
+      transition: all 100ms ease-in 0s;
+      cursor: pointer;
+      color: black;
+      font-size: 12px;
+
+      &:active {
+        transform: scale(0.9);
+      }
+
+      &.selected {
+        background-color: #fe65083d;
+        border: 1px solid #fe6508;
+        width: auto;
+        color: white;
+        padding: 9px 12px;
+        transition: background-color 0.1s ease-in, border-color 0.1s ease-in,
+          box-shadow 0.1s ease-in, width 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+
+        span svg {
+          stroke: white;
+        }
+      }
+    }
+  }
+}

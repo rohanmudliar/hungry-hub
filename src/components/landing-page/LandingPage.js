@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Wrapper from "../common/Wrapper";
-import Search from "../common/SearchBar";
+import Search from "./search-bar/SearchBar";
 
 import cityImage from "../../assets/images/landing-page/city-icons.png";
 

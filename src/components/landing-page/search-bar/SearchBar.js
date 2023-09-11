@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import CITIES from "../../constants/cities_db.json";
+import "./SearchBar.scss";
+
+import CITIES from "../../../constants/cities_db.json";
 
 const Search = () => {
   const navigate = useNavigate();

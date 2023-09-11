@@ -1,0 +1,15 @@
+.results-page-container {
+  .section-title {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
