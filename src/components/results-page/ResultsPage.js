@@ -95,7 +95,7 @@ const ResultsPage = () => {
 
     switch (action) {
       case "ADD":
-        setActiveFilters((pState) => (newDataArray = [payload, ...pState]));
+        setActiveFilters((pState) => [payload, ...pState]);
         break;
 
       case "REMOVE":
