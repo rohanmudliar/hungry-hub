@@ -52,6 +52,14 @@ const ResultsPage = () => {
         setIsResultsPageLoading(false);
       } catch (err) {
         setShowError(true);
+
+        setTimeout(() => {
+          setDataCards(DATA_SET);
+          setCardList(DATA_SET);
+          setIsResultsPageLoading(false);
+          setShowError(false);
+        }, 5000);
+
         console.log("Error occured", err);
       }
     })();
@@ -108,13 +116,12 @@ const ResultsPage = () => {
   if (showError) {
     return (
       <Wrapper>
-        Something went wrong with Swiggy's API.
+        Something went wrong with Swiggy's API, or there will be a CORS Error.
         <br />
         <br />
         (Yes, I am using Swiggy's API to show few cards)
         <br />
-        <br />
-        Please refresh the page or try again.
+        <br /> I am now adding the STATIC Data into my list.
       </Wrapper>
     );
   }
